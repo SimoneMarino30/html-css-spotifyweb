@@ -3,6 +3,8 @@
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	/* debug */
+	background-color: aqua;
 }
 
 .clearfix::after {
@@ -11,84 +13,6 @@
 	display: table;
 }
 
-/* DEBUG */
-
 .container {
-	background-color: aqua;
-}
-
-.content {
-	/* debug */
-	border: 1px dashed yellowgreen;
-	width: calc(100% - 300px);
 	
-}
-
-/* sidebar */
-
-.sidebar {
-	/* debug */
-	background-color: coral;
-	width: 300px;
-	height: 90vh;
-}
-
-.sidebar img+h1 {
-	display: inline;
-}
-
-/* header */
-header {
-	justify-content: flex-end;
-	/* debug */
-	background-color: blue;
-	height: 100px;
-}
-
-.gen-list {
-	border: 1px dashed blue;
-	justify-content: center;
-}
-
-.gen-list > li {
-	padding: 20px;
-	list-style: none;
-}
-/* main */
-
-main {
-	background-color: green;
-	height: calc(100% - 100px);
-}
-
-/* footer */
-
-footer {
-	background-color: gray;
-	height: 10vh;
-}
-
-.foot {
-	display: flex;
-	background-color: violet;
-}
-
-.brano {
-	justify-content: space-between;
-	height: 10vh;
-	background-color: blanchedalmond;
-}
-
-.command-bar {
-	display: flex;
-	flex-direction: column;
-	background-color: purple;
-}
-
-.icons {
-	background-color: aquamarine;
-}
-
-.bar {
-	background-color: greenyellow;
 }

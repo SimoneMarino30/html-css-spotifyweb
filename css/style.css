@@ -1,0 +1,156 @@
+/* DEBUG */
+
+.content {
+    /* debug */
+    border: 1px dashed yellowgreen;
+    width: calc(100% - 250px);
+}
+
+/* sidebar */
+
+.sidebar {
+    padding: 1.8rem 1rem;
+    /* debug */
+    background-color: coral;
+    width: 250px;
+}
+
+.logo > h1 {
+    padding-left: .5rem;
+    font-size: 2rem;
+    border: 2px dashed blue;
+}
+
+.sidebar img+h1 {
+    display: inline;
+}
+
+img {
+    border: 2px dashed yellow;
+    min-width: 3rem;
+}
+
+.logo {
+    border: 2px dashed red;
+    padding-bottom: 1rem;
+}
+
+.home-menu {
+    padding: 1rem 0;
+    border: 2px dashed black;
+}
+
+.play-list {
+    border: 2px dashed darkgoldenrod;
+}
+
+
+.play-name>li {
+    padding: .5rem 0;
+    list-style: none;
+}
+
+.install {
+    padding: 5rem 0 0 0;
+    border: 2px dashed greenyellow;
+}
+
+.install > hr {
+    margin: .5rem 0;
+}
+
+
+
+/* header */
+header {
+    position: fixed;
+    justify-content: flex-end;
+    /* debug */
+    background-color: blue;
+    height: 100px;
+    width: calc(100% - 250px);
+}
+
+header > button {
+    margin: 1.8rem 0.5rem 1.8rem 1.5rem;
+    width: 15rem;
+    border-radius: 50px;
+}
+
+
+/* main */
+
+main {
+    background-color: green;
+}
+
+.gen-list {
+    padding-top: 7rem;
+    border: 1px dashed blue;
+    justify-content: center;
+}
+
+.gen-list>li {
+    padding: 20px;
+    list-style: none;
+}
+
+.title {
+    padding: 2rem 0;
+}
+/* footer */
+
+footer {
+    background-color: gray;
+    height: 7rem;
+    padding: .5rem 1rem;
+}
+
+.brano {
+    justify-content: space-between;
+    height: 10vh;
+    background-color: firebrick;
+}
+
+.foot {
+    display: flex;
+    background-color: violet;
+}
+
+.song-name {
+    padding-top: 1rem;
+    background-color: yellow;
+}
+
+.command-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+}
+
+.fa-heart,
+.fa-folder
+ {
+    padding: 1.5rem .5rem;
+    background-color: blue;
+}
+
+.bar-icons {
+   padding: .5rem 2rem; 
+}
+
+.bar-icons > i {
+    padding: 0 1.5rem;
+}
+.bar {
+    background-color: greenyellow;
+}
+
+.volume {
+    padding: 1.5rem;
+    background-color: violet;
+}
+
+.volume > i {
+    padding: 0 .5rem;
+}
