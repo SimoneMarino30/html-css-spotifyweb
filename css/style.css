@@ -2,20 +2,20 @@
 
 .content {
     /* debug */
-    border: 1px dashed yellowgreen;
     width: calc(100% - 250px);
 }
 
 /* sidebar */
 
 .sidebar {
-    padding: 1.8rem 1rem;
+    padding: 1.8rem 1rem 0 1rem;
     /* debug */
     background-color: coral;
     width: 250px;
 }
 
 .logo > h1 {
+    padding-top: .25rem;
     padding-left: .5rem;
     font-size: 2rem;
     border: 2px dashed blue;
@@ -37,26 +37,50 @@ img {
 
 .home-menu {
     padding: 1rem 0;
-    border: 2px dashed black;
+    border: 2px dashed olivedrab;
 }
 
-.play-list {
+.home-menu > div > a > i {
+    font-size: 1.5rem;
+    padding: .5rem .5rem 0 0;
+}
+
+.play {
+    padding-bottom: 1rem;
     border: 2px dashed darkgoldenrod;
 }
 
+.plus {
+    font-size: 2.5rem;
+    color: #A3A3A3;
+    border: 1px dashed red;
+}
 
-.play-name>li {
-    padding: .5rem 0;
+.crea {
+    display: flex;
+    border: 1px dashed black;
+}
+
+.crea > a > span {
+    float: right;
+    padding: .8rem 0 0 .5rem;
+}
+
+.play-name > a > li {
+    padding: .8rem 0;
+    font-size: .8rem;
+    font-weight: 500;
     list-style: none;
 }
 
 .install {
-    padding: 5rem 0 0 0;
+    margin: 30rem 0 0 0;
     border: 2px dashed greenyellow;
 }
 
 .install > hr {
     margin: .5rem 0;
+    width: 95%;
 }
 
 
@@ -98,12 +122,13 @@ main {
 .title {
     padding: 2rem 0;
 }
+
 /* footer */
 
 footer {
     background-color: gray;
-    height: 7rem;
-    padding: .5rem 1rem;
+    height: 6rem;
+    padding: 1rem;
 }
 
 .brano {

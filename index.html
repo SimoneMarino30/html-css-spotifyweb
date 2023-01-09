@@ -7,6 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SpotifyWeb</title>
 
+	<!-- FONT -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 	<!-- FONTAWESOME -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -20,51 +25,87 @@
 
 <body>
 	<section>
+		<!-- LOGO -->
 		<div class="d-flex">
 			<div class="sidebar">
 				<div class="logo d-flex">
 					<img src="./img/favicon.ico" alt="Logo">
-					<h1>Spotify</h1>
+					<h1 class="fw-700">Spotify</h1>
 				</div>
+				<!-- MENU -->
 				<div class="home-menu">
 					<div>
-						<i class="fa-solid fa-house"></i>
-						<span>Home</span>
+						<a href="#">
+							<i class="fa-solid fa-house"></i>
+							<span>Home</span>
+						</a>
 					</div>
 					<div>
-						<i class="fa-solid fa-magnifying-glass"></i>
-						<span>Cerca</span>
+						<a href="#">
+							<i class="fa-solid fa-magnifying-glass"></i>
+							<span>Cerca</span>
+						</a>
 					</div>
 					<div>
-						<i class="fa-solid fa-lines-leaning"></i>
-						<span>La tua libreria</span>
+						<a href="#">
+							<i class="fa-solid fa-lines-leaning"></i>
+							<span>La tua libreria</span>
+						</a>
 					</div>
 				</div>
+				<!-- CREA PLAYLIST -->
 				<div class="play-list">
-					<div>PLAYLIST</div>
-					<i class="fa-solid fa-square-plus"></i>
-					<span>Crea playlist</span>
+					<div class="fw-700 play">PLAYLIST</div>
+					<div class="crea">
+						<a href="#">
+							<i class="fa-solid fa-square-plus plus"></i>
+							<span>Crea playlist</span>
+						</a>
+					</div>
+					
+					<!-- NOME PLAYLIST -->
 					<ul class="play-name">
-						<li>Nome Playlist</li>
-						<li>Nome Playlist</li>
-						<li>Nome Playlist</li>
-						<li>Nome Playlist</li>
-						<li>Nome Playlist</li>
-						<li>Nome Playlist</li>
+						<a href="#"><li>Nome Playlist</li></a>
+						<a href="#">
+							<li>Nome Playlist</li>
+						</a>
+						<a href="#">
+							<li>Nome Playlist</li>
+						</a>
+						<a href="#">
+							<li>Nome Playlist</li>
+						</a>
+						<a href="#">
+							<li>Nome Playlist</li>
+						</a>
+						<a href="#">
+							<li>Nome Playlist</li>
+						</a>
+						<a href="#">
+							<li>Nome Playlist</li>
+						</a>
+						
 					</ul>
 				</div>
+				<!-- BASE SIDEBAR -->
 				<div class="install">
-					<i class="fa-regular fa-circle-down"></i>
-					<span>Installa app</span>
+					<a href="#">
+						<i class="fa-regular fa-circle-down"></i>
+						<span>Installa app</span>
+					</a>
+					
 					<hr>
+
 					<i class="fa-solid fa-circle-user"></i>
 					<span>Jhon Doe</span>
 				</div>
 			</div>
+			<!-- HEADER -->
 			<div class="content">
 				<header class="d-flex">
 					<button>EFFETTUA L'UPGRADE</button>
 				</header>
+				<!-- MAIN LIST -->
 				<main>
 					<div>
 						<ul class="d-flex gen-list">
@@ -75,6 +116,7 @@
 							<li>NUOVE USCITE</li>
 							<li>SCOPRI</li>
 						</ul>
+						<!-- CONTENUTO -->
 						<div class="container songs">
 							<div class="title">
 								Recently Played
@@ -169,7 +211,7 @@
 					</div>
 					
 					<div class="bar">
-						<div>bbbbb</div>
+						<div>BARRA</div>
 					</div>
 				</div>
 				<div class="foot volume">
