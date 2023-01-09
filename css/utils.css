@@ -11,32 +11,84 @@
 	display: table;
 }
 
-/* BACKGROUND */
+/* DEBUG */
+
+.container {
+	background-color: aqua;
+}
 
 .content {
-	background-color: red;
-	border: 3px dashed red;
+	/* debug */
+	border: 1px dashed yellowgreen;
 	width: calc(100% - 300px);
 	
 }
+
+/* sidebar */
+
+.sidebar {
+	/* debug */
+	background-color: coral;
+	width: 300px;
+	height: 90vh;
+}
+
+.sidebar img+h1 {
+	display: inline;
+}
+
+/* header */
+header {
+	justify-content: flex-end;
+	/* debug */
+	background-color: blue;
+	height: 100px;
+}
+
+.gen-list {
+	border: 1px dashed blue;
+	justify-content: center;
+}
+
+.gen-list > li {
+	padding: 20px;
+	list-style: none;
+}
+/* main */
+
+main {
+	background-color: green;
+	height: calc(100% - 100px);
+}
+
+/* footer */
 
 footer {
 	background-color: gray;
 	height: 10vh;
 }
 
-.sidebar {
-	background-color: coral;
-	width: 300px;
-	height: 90vh;
+.foot {
+	display: flex;
+	background-color: violet;
 }
 
-header {
-	background-color: blue;
-	height: 100px;
+.brano {
+	justify-content: space-between;
+	height: 10vh;
+	background-color: blanchedalmond;
 }
 
-main {
-	background-color: green;
-	height: calc(100% - 100px);
+.command-bar {
+	display: flex;
+	flex-direction: column;
+	background-color: purple;
+}
+
+.icons {
+	background-color: aquamarine;
+}
+
+.bar {
+	background-color: greenyellow;
 }
