@@ -104,7 +104,7 @@
 			<!-- HEADER -->
 			<div class="content">
 				<header class="d-flex">
-					<button>EFFETTUA L'UPGRADE</button>
+					<button class="fw-700">EFFETTUA L'UPGRADE</button>
 				</header>
 				<!-- MAIN LIST -->
 				<main>
@@ -196,41 +196,43 @@
 				</main>
 			</div>
 		</div>
-
+		<!-- FOOTER -->
 		<footer>
 			<div class="brano d-flex">
 				<div class="foot">
-					<img src="./img/sinister.jpeg" alt="Sinister">
+					<img src="./img/sinister.jpeg" alt="Sinister" id="foot-img">
 					<div class="song-name">
-						<div>Sinister</div>
-						<div>Brano nome</div>
+						<div class="fw-700" id="foot-name">Sinister</div>
+						<div class="brano-name">Brano nome</div>
 					</div>
 					<div class="song-icons d-flex">
-						<i class="fa-solid fa-heart"></i>
-						<i class="fa-solid fa-folder"></i>
+						<i class="fa-regular fa-heart"></i>
+						<i class="fa-regular fa-folder"></i>
 					</div>
 				</div>
 				
 				
-				
+				<div class="start time">0:25</div>
 				<div class="command-bar">
 					<div class="bar-icons d-flex">
 						<i class="fa-solid fa-shuffle"></i>
 						<i class="fa-solid fa-backward-step"></i>
-						<i class="fa-solid fa-circle-play"></i>
+						<i class="fa-regular fa-circle-play"></i>
 						<i class="fa-solid fa-forward-step"></i>
 						<i class="fa-solid fa-rotate-right"></i>
 					</div>
-					
+					<div class="end time">4:35</div>
 					<div class="bar">
-						<div>BARRA</div>
+						<span class="progress"></span>
 					</div>
 				</div>
 				<div class="foot volume">
 					<i class="fa-solid fa-list"></i>
 					<i class="fa-solid fa-desktop"></i>
 					<i class="fa-solid fa-volume-high"></i>
-					<div>BARRA</div>
+					<div class="volume-bar">
+						<span class="progress"></span>
+					</div>
 				</div>
 			</div>
 		</footer>

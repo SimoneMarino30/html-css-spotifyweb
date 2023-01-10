@@ -1,18 +1,14 @@
-/* DEBUG */
-
-
-
 /* sidebar */
 
 .top-content {
-    height: calc(100vh - 7rem);
+    height: calc(100vh - 8rem);
     background-color: #090F10;
 }
 .sidebar {
     padding: 1.8rem 1rem 0 1rem;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 7rem);
+    height: calc(100vh - 8rem);
     overflow: auto;
     /* debug */
     background-color: #000000;
@@ -117,6 +113,9 @@ header > button {
     margin: 1.8rem 0.5rem 1.8rem 1.5rem;
     width: 15rem;
     border-radius: 50px;
+    background-color: transparent;
+    color: #eee;
+    border-color: #eee;
 }
 
 .content {
@@ -160,10 +159,6 @@ main {
     padding-top: .5rem;
 }
 
-/***************** DEBUG *****************/
-.col-2 {
-    border: 1px dashed blue;
-}
 .col-2 > img {
     padding: 1rem;
 }
@@ -191,59 +186,118 @@ main {
 .round {
     border-radius: 50%;
 }
+
 /* footer */
 
 footer {
-    background-color: gray;
-    height: 7rem;
+    position: relative;
+    background-color: #282828;
+    height: 8rem;
     padding: 1rem;
 }
 
 .brano {
     justify-content: space-between;
-    height: 10vh;
-    background-color: firebrick;
+    height: 5rem;
 }
 
 .foot {
     display: flex;
-    background-color: violet;
+}
+
+#foot-img {
+    padding-top: .7rem;
+}
+
+#foot-name {
+    font-size: .9rem;
 }
 
 .song-name {
-    padding-top: 1rem;
-    background-color: yellow;
+    padding: 2rem 1rem;
+    color: #eee;
 }
 
+.brano-name {
+    color: #A3A3A3;
+    font-size: .5rem;
+}
 .command-bar {
     display: flex;
     flex-direction: column;
-    background-color: purple;
 }
 
 .fa-heart,
-.fa-folder
- {
-    padding: 1.5rem .5rem;
-    background-color: blue;
+.fa-folder {
+    padding: 2.3rem .5rem;
+    color: #A3A3A3;
+}
+
+.bar {
+    width: 36rem;
+    height: .5rem;
+    margin-top: 1.2rem;
+    background-color: #A3A3A3;
+    border-radius: 4px;
+}
+
+.progress {
+    display: block;
+    width: 20%;
+    height: 100%;
+    background-color: #eee;
+    border-radius: 4px;
+    
 }
 
 .bar-icons {
-   padding: .5rem 2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 3rem; 
+    font-size: 1.5rem;
+    color: #eee;
 }
 
 .bar-icons > i {
     padding: 0 1.5rem;
 }
-.bar {
-    background-color: greenyellow;
+
+.fa-circle-play {
+    font-size: 2.5rem;
 }
 
 .volume {
-    padding: 1.5rem;
-    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.3rem;
 }
 
 .volume > i {
-    padding: 0 .5rem;
+    color: #A3A3A3;
+    padding: 0 1rem;
+}
+
+.volume-bar {
+    width: 10rem;
+    height: .3rem;
+    background-color: #A3A3A3;
+    border-radius: 4px;
+}
+
+.time {
+    position: absolute;
+    top: 5.2rem;
+    color: #eee;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.start {
+    left: 22rem;
+}
+
+.end {
+    right: 32rem;
 }
