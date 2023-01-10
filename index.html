@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/utils.css">
 	<link rel="stylesheet" href="./css/12bool.css">
+	<link rel="stylesheet" href="./css/media-query.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -30,10 +31,9 @@
 		<div class="top-content d-flex">
 			<div class="sidebar">
 				<div class="logo d-flex">
-					<img src="./img/favicon.ico" alt="Logo" class="spotify">
-					<h1 class="fw-800">Spotify</h1>
+					
 				</div>
-				<!-- MENU -->
+				<!-- SIDEBAR MENU -->
 				<div class="home-menu">
 					<div>
 						<a href="#">
@@ -85,10 +85,9 @@
 						<a href="#">
 							<li>Nome Playlist</li>
 						</a>
-						
 					</ul>
 				</div>
-				<!-- BASE SIDEBAR -->
+				<!-- BOTTOM PLAYLIST -->
 				<div class="install">
 					<a href="#">
 						<i class="fa-regular fa-circle-down"></i>
@@ -97,8 +96,8 @@
 					
 					<hr>
 
-					<i class="fa-solid fa-circle-user"></i>
-					<span>Jhon Doe</span>
+					<i class="fa-regular fa-circle-user" id="user-icon"></i>
+					<span class="jhon">Jhon Doe</span>
 				</div>
 			</div>
 			<!-- HEADER -->
@@ -124,32 +123,50 @@
 							</div>
 							<div class="row">
 								<div class="col-2">
-									<img src="./img/metal_lifting.jpg" alt="Metal">
+									<div class="play-hover">
+										<img src="./img/metal_lifting.jpg" alt="Metal">
+										<i class="fa-regular fa-circle-play"></i>
+									</div>
 									<div class="song-title">Heavy Metal</div>
 									<div class="song-subtitle">Subtitle</div>
 								</div>
 								<div class="col-2">
-									<img src="./img/stranger.jpeg" alt="Stranger">
+									<div class="play-hover">
+										<img src="./img/stranger.jpeg" alt="Stranger">
+										<i class="fa-regular fa-circle-play"></i>
+									</div>
 									<div class="song-title" id="stranger">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</div>
 									<div class="song-subtitle">Kyle dixon & Michael Stein</div>
 								</div>
 								<div class="col-2">
-									<img src="./img/aquietplace.jpeg" alt="Quiet">
+									<div class="play-hover">
+										<img src="./img/aquietplace.jpeg" alt="Quiet">
+										<i class="fa-regular fa-circle-play"></i>
+									</div>
 									<div class="song-title">A quiet place</div>
 									<div class="song-subtitle">Subtitle</div>
 								</div>
 								<div class="col-2">
-									<img src="./img/split.jpeg" alt="Split">
+									<div class="play-hover">
+										<img src="./img/split.jpeg" alt="Split">
+										<i class="fa-regular fa-circle-play"></i>
+									</div>
 									<div class="song-title">Split</div>
 									<div class="song-subtitle">Subtitle</div>
 								</div>
 								<div class="col-2">
-									<img src="./img/cure.jpeg" alt="Cure">
+									<div class="play-hover">
+										<img src="./img/cure.jpeg" alt="Cure">
+										<i class="fa-regular fa-circle-play"></i>
+									</div>
 									<div class="song-title">A cure for wellness</div>
 									<div class="song-subtitle">Subtitle</div>
 								</div>
 								<div class="col-2">
-									<img src="./img/sinister.jpeg" alt="Sinister">
+									<div class="play-hover">
+										<img src="./img/sinister.jpeg" alt="Sinister">
+										<i class="fa-regular fa-circle-play"></i>
+									</div>
 									<div class="song-title">Sinister</div>
 									<div class="song-subtitle">Subtitle</div>
 								</div>
@@ -164,11 +181,17 @@
 							
 							<div class="row">
 								<div class="col-2">
-									<img src="./img/radar.jpeg" alt="Radar">
+									<div class="play-hover">
+										<img src="./img/radar.jpeg" alt="Radar">
+										<i class="fa-regular fa-circle-play"></i>
+									</div>
 									<div class="song-title">Release Radar</div>
 								</div>
 								<div class="col-2">
-									<img src="./img/mixdaily.jpeg" alt="Mix">
+									<div class="play-hover">
+										<img src="./img/mixdaily.jpeg" alt="Mix">
+										<i class="fa-regular fa-circle-play"></i>
+									</div>
 									<div class="song-title">Daily Mix 1</div>
 								</div>
 							</div>
@@ -182,12 +205,18 @@
 							
 							<div class="row">
 								<div class="col-2">
-									<img src="./img/youg.jpeg" alt="Youg" class="round">
+									<div class="play-hover">
+										<img src="./img/youg.jpeg" alt="Youg" class="round">
+										<i class="fa-regular fa-circle-play"></i>
+									</div>
 									<div class="song-title">Lana del Rey</div>
 									
 								</div>
 								<div class="col-2">
-									<img src="./img/einaudi.jpeg" alt="Einaudi" class="round">
+									<div class="play-hover">
+										<img src="./img/einaudi.jpeg" alt="Einaudi" class="round">
+										<i class="fa-regular fa-circle-play"></i>
+									</div>	
 									<div class="song-title">Ludovico Einaudi</div>
 								</div>
 							</div>
@@ -210,8 +239,7 @@
 						<i class="fa-regular fa-folder"></i>
 					</div>
 				</div>
-				
-				
+				<!-- CENTRAL BAR -->
 				<div class="start time">0:25</div>
 				<div class="command-bar">
 					<div class="bar-icons d-flex">
@@ -226,17 +254,19 @@
 						<span class="progress"></span>
 					</div>
 				</div>
+				<!-- VOLUME BAR -->
 				<div class="foot volume">
 					<i class="fa-solid fa-list"></i>
 					<i class="fa-solid fa-desktop"></i>
 					<i class="fa-solid fa-volume-high"></i>
 					<div class="volume-bar">
-						<span class="progress"></span>
+						<span class="progress volume-dot"></span>
 					</div>
 				</div>
 			</div>
 		</footer>
 	</section>
+	
 </body>
 
 </html>
