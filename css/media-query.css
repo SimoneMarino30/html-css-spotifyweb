@@ -1,8 +1,4 @@
 @media screen and (max-width: 992px) {
-    .sidebar {
-        
-    }
-
     .row {
         
         flex-wrap: wrap;
@@ -68,7 +64,8 @@
     #little-search,
     #little-library,
     #little-install,
-    #little-user {
+    #little-user,
+    .little-profile {
         display: block;
     }
 
