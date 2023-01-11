@@ -18,11 +18,14 @@
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+	<!-- framework -->
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/utils.css">
 	<link rel="stylesheet" href="./css/12bool.css">
-	<link rel="stylesheet" href="./css/media-query.css">
+
+	<!-- custom css -->
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/media-query.css">
 </head>
 
 <body>
@@ -33,7 +36,22 @@
 				<div class="logo d-flex">
 					<img src="./img/logo.svg" alt="Logo">
 				</div>
-				<!-- SIDEBAR MENU -->
+				<!-- SIDEBAR SMALL MENU (600px)-->
+				<div class="hidden-top">
+					<img src="./img/logo-small.svg" alt="home-small-menu" id="little-logo">
+					<img src="./img/home.svg" alt="home-small-menu" id="little-home">
+					<img src="./img/search.svg" alt="home-small-menu" id="little-search">
+					<img src="./img/libreria.svg" alt="home-small-menu" id="little-library">
+				</div>
+				<div class="hidden-bottom">
+					
+					<div class="little-profile">
+						<img src="./img/profile.svg" alt="home-small-menu" id="little-user">
+					</div>
+					<img src="./img/download.svg" alt="home-small-menu" id="little-install">
+				</div>
+				
+				<!-- SIDEBAR BIG MENU -->
 				<div class="home-menu">
 					<div>
 						<a href="#">
@@ -249,9 +267,12 @@
 						<i class="fa-solid fa-forward-step"></i>
 						<i class="fa-solid fa-rotate-right"></i>
 					</div>
-					<div class="bar">
-						<span class="progress"></span>
+					<div class="bar-container">
+						<div class="bar">
+							<span class="progress"></span>
+						</div>
 					</div>
+					
 				</div>
 				<!-- VOLUME BAR -->
 				<div class="foot volume">

@@ -35,6 +35,34 @@
     color: #eee;
 }
 
+/* LITTLE MENU */
+
+#little-home {
+    display: none;
+}
+
+#little-home,
+#little-logo,
+#little-search,
+#little-library,
+#little-install,
+#little-user {
+    display: none;
+    margin-bottom: .5rem;
+}
+
+#little-user {
+    aspect-ratio: 1.2;   
+}
+
+.little-profile {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #A3A3A3;
+}
+
 /* home menu */
 
 .home-menu {
@@ -194,11 +222,13 @@ main {
     padding-top: 7rem;
     justify-content: center;
     font-size: 0.8rem;
+    flex-wrap: wrap;
 }
 
 .gen-list>li {
     padding: 20px;
     list-style: none;
+    border-bottom: 2px solid transparent;
 }
 
 /* HOVER GEN-LIST */
@@ -293,9 +323,13 @@ footer {
 
 .foot {
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 #foot-img {
+    width: 40%;
+    max-height: 80%;
     padding-top: .7rem;
 }
 
@@ -304,7 +338,7 @@ footer {
 }
 
 .song-name {
-    padding: 2rem 1rem;
+    
     color: #eee;
 }
 
@@ -317,19 +351,24 @@ footer {
 .brano-name:hover {
     color: #eee;
     font-weight: 700;
+    cursor: pointer;
     
 }
 
 .command-bar {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 305px;
 }
 
-.fa-heart,
-.fa-folder {
-    padding: 2.3rem .5rem;
+.song-icons {
+    gap: 10px;
     color: #A3A3A3;
 }
+
 
 /* FOOTER ICONS HOVER */
 
@@ -346,19 +385,27 @@ footer {
 }
 
 /* central bar */
+
+.bar-container {
+    display: flex;
+    align-items: center;
+}
+
 .bar {
-    position: relative;
-    max-width: 36rem;
-    height: .5rem;
-    margin-top: 1.2rem;
+    
+    /* position: relative; */
+    /* max-width: 36rem; */
+    height: .3rem;
+    /* margin-top: 1.2rem; */
     background-color: #A3A3A3;
     border-radius: 4px;
     cursor: pointer;
+    width: calc(100% - 60px);
 }
 
 .progress {
     display: block;
-    max-width: 28%;
+    width: 30%;
     height: 100%;
     background-color: #eee;
     border-radius: 4px;
@@ -370,31 +417,31 @@ footer {
     background-color: yellowgreen;  
 }
 
-/* DOT BAR CENTRAL BAR */
+/* CENTRAL DOT BAR */
 
 .progress::after {
     content: "";
     display: block;
-    height: 1rem;
-    width: 1rem;
+    height: .6rem;
+    width: .6rem;
     border-radius: 50%;
     background-color: #eee;
     position: absolute;
-    top: -.4rem;
-    left: 7rem;
+    top: -.15rem;
+    right: 0rem;
 }
 
 .bar-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .5rem 3rem; 
+    /* padding: .5rem 3rem;  */
     font-size: 1.5rem;
     color: #eee;
 }
 
 .bar-icons > i {
-    padding: 0 1.5rem;
+    padding: 0 .5rem;
 }
 
 .fa-circle-play {
@@ -413,22 +460,25 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.3rem;
+    /* padding: 2.3rem; */
 }
 
 .volume > i {
     color: #A3A3A3;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
 }
 
 .volume-bar {
-    width: 10rem;
+    width: 5rem;
     height: .3rem;
     background-color: #A3A3A3;
     border-radius: 4px;
     cursor: pointer;
 }
 
+.progress .volume-dot {
+    width: ;
+}
 
 
 /* VOLUME BAR HOVER */
@@ -438,23 +488,21 @@ footer {
 
 /* DOT BAR CENTRAL BAR */
 
-.bar::before {
+.bar-container::before {
+    width: 30px;
+    margin-right: 10px;
     content: "0:25";
     display: block;
-    position: absolute;
-    left: -3.5rem;
-    top: -.5rem;
     color: #eee;
     font-weight: 600;
     font-size: .8rem;
 }
 
-.bar::after {
+.bar-container::after {
+    width: 30px;
+    margin-left: 10px;
     content: "4:35";
     display: block;
-    position: absolute;
-    left: 30rem;
-    top: -.5rem;
     color: #eee;
     font-weight: 600;
     font-size: .8rem;
