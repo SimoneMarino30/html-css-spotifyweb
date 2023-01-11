@@ -9,6 +9,11 @@
         flex-basis: calc((100% / 12) * 3);
         max-width: calc((100% / 12) * 3);
     }
+
+    .title {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -76,5 +81,10 @@
     .col-2 {
         flex-basis: calc((100% / 12) * 6);
         max-width: calc((100% / 12) * 6);
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
     }
 }
